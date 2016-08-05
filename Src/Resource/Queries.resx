@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="B2BEXPORT_EMPTY_RECORDS" xml:space="preserve">
+    <value>SELECT CONVERT(INT,ROW_NUMBER() OVER (ORDER BY T0.DocEntry)) ID, 'Y' Slct, '' [TYPE], T0.ObjType [OBTP], T0.DocEntry [DCEN], T0.DocNum [DCNM], T0.NumAtCard [POREF]
+	, T0.DocTotal [DCTTL]
+	, CONVERT(INT,NULL) B2BL, CONVERT(NVARCHAR(254),'') FLNM, CONVERT(NVARCHAR(254),'') RMRK
+FROM OINV T0
+WHERE DocEntry &lt;&gt; DocEntry</value>
+  </data>
+  <data name="B2B_GET_ITEM_NUM_IN_SALES" xml:space="preserve">
+    <value>SELECT NumInSale FROM OITM WHERE ItemCode = '{0}'</value>
+  </data>
+  <data name="B2B_PROCESS_ALERT" xml:space="preserve">
+    <value>DECLARE @AlertName NVARCHAR(50) = 'B2B Process Alert'
+SELECT T0.DocNum B2BEntry, Case T0.U_TWM_DRCT WHEN 'E' THEN 'Export' WHEN 'I' Then 'Import' ELSE '' END Direction , CASE T1.U_TWM_OBTP WHEN '1250000001' THEN 'Inv. Trans Request' 
+							WHEN '17' THEN 'Sales Order'
+							WHEN '67' THEN 'Inv. Trans' 
+							WHEN '13' THEN 'AR Invoice'
+							WHEN '59' THEN 'Goods Receipt'
+							WHEN '60' THEN 'Goods Issue'
+							WHEN '112' THEN CASE T0.U_TWM_OBTP WHEN 'IRT' THEN 'Draft Goods Receipt' ELSE 'Draft' END
+							ELSE T1.U_TWM_OBTP END [Object Type]
+	, T0.U_TWM_B2BC [B2B Object]
+	, T1.U_TWM_ENTR DocEntry, CASE T0.U_TWM_STTS WHEN 'S' THEN 'Successful' ELSE 'Failed' END Status, T0.U_TWM_RMRK Remark
+FROM [@TWM_OB2BL] T0 WITH(NOLOCK) LEFT JOIN [@TWM_B2BL1] T1 WITH(NOLOCK) ON T0.DocEntry = T1.DocEntry  
+WHERE CONVERT(DATETIME, CONVERT(NVARCHAR(8),T0.CreateDate,112) + ' ' + LEFT(RIGHT('000' + CONVERT(NVARCHAR(4),T0.CreateTime),4),2) + ':' + RIGHT(RIGHT('000' + CONVERT(NVARCHAR(4),T0.CreateTime),4),2)) &gt; ISNULL((SELECT Max(CONVERT(DATETIME, CONVERT(NVARCHAR(8),T2.LastDate,112) + ' ' + LEFT(RIGHT('000' + CONVERT(NVARCHAR(4),T2.LastTime),4),2) + ':' + RIGHT(RIGHT('000' + CONVERT(NVARCHAR(4),T2.LastTime),4),2))) FROM OALT T2 WHERE [Name] = @AlertName), '20140101' )
+GROUP BY T0.DocNum, T1.U_TWM_OBTP, T0.U_TWM_OBTP, T1.U_TWM_ENTR, T0.U_TWM_STTS, T0.U_TWM_RMRK, T0.U_TWM_DRCT, T0.U_TWM_B2BC</value>
+  </data>
+  <data name="DFI_INV_DETAIL_DETAIL" xml:space="preserve">
+    <value>--DFI_INV_DETAIL_DETAIL
+DECLARE @Entry int = {0}
+IF OBJECT_ID('TEMPDB..#DETAIL') IS NOT NULL BEGIN DROP TABLE #DETAIL END
+
+CREATE TABLE #DETAIL (
+	DetailTag NCHAR(3)
+	, VendorCode NCHAR(5)
+	, StoreCode NCHAR(6)
+	, DSPNumber NCHAR(10)
+	, PONumber NCHAR(10)
+	, InvoiceNumber NCHAR(15)
+	, SerialNumber NCHAR(6)		--Running Number by Invoice	(LineNum)
+	, ItemCode NCHAR(14)			--Supplier Item Code
+	, InvoiceQty NCHAR(10)		--Up to 2 decimal places - Max of 9999999.99 - Including decimal point.		-Right Allign
+	, InvoiceL2Cost NCHAR(13)	--Up to 4 decimal places - Max of 99999999.9999 - Including decimal point	-Right Allign
+	, UnitIndicator NCHAR(1)		--If by SKU, unit indicator ='S' - if by PUF, unit indicator ='P'
+	, CSItemCode NCHAR(20)
+	, BuyerCode NCHAR(5)
+	, LineNum int
+)
+
+INSERT INTO #DETAIL
+SELECT 'DET'								DetailTag
+	, T0.U_TWM_XVEND						VendorCode
+	, LEFT(ISNULL(SUBSTRING(U_TWM_ADDID,CHARINDEX('-',U_TWM_ADDID) + 1,5),''),5)		StoreCode	
+	, ''									DSPNumber
+	, LEFT(ISNULL(T3.NumAtCard,''),10)		PONumber
+	, LEFT(T3.DocNum,15)					InvoiceNumber
+	, RIGHT('000000' + CONVERT(NVARCHAR(5),T4.VisOrder +1),6) SerialNumber
+	, LEFT(T4.ItemCode,14)					ItemCode
+	, RIGHT('          ' + CONVERT(NVARCHAR(10), CONVERT (NUMERIC(10,2),T4.Quantity)),10)	InvoiceQty
+	, RIGHT('             ' + CONVERT(NVARCHAR(13), CONVERT(NUMERIC(13,4),ROUND(T4.LineTotal,4))),13)	InvoiceL2Cost
+	, CASE T4.NumPerMsr WHEN 1 THEN 'S' ELSE 'P'	END	UnitIndicator
+	, ISNULL(T6.U_TWM_CSITM,'')				CSItemCode
+	, T3.U_TWM_DFIBC						BuyerCode
+	, T4.LineNum
+FROM [@TWM_OB2BS] T0 JOIN OADM T1 ON T0.Code = 'DFI'
+	JOIN OINV T3 ON T3.DocEntry = @Entry
+	JOIN INV1 T4 ON T3.DocEntry = T4.DocEntry
+	LEFT JOIN CRD1 T5 ON T3.CardCode = T5.CardCode AND T3.ShipToCode = T5.Address AND T5.AdresType = 'S'
+	LEFT JOIN [@TWM_DFICN] T6 ON T6.Code = ISNULL(T3.U_TWM_DFIBC,'') + '.' + T4.ItemCode
+
+SELECT '''' +  DetailTag + '''' DetailTag
+	, '''' +  VendorCode  + '''' VendorCode
+	, '''' +  StoreCode  + '''' StoreCode
+	, '''' +  DSPNumber  + '''' DSPNumber
+	, '''' +  PONumber  + '''' PONumber
+	, '''' +  InvoiceNumber  + '''' InvoiceNumber
+	, '''' +  SerialNumber  + '''' SerialNumber
+	, '''' +  ItemCode  + '''' ItemCode
+	, '''' +  InvoiceQty  + '''' InvoiceQty
+	, '''' +  InvoiceL2Cost  + '''' InvoiceL2Cost
+	, '''' +  UnitIndicator  + '''' UnitIndicator
+	, '''' +  CSItemCode  + '''' CSItemCode
+	, '''' +  BuyerCode  + '''' BuyerCode
+	, LineNum 
+FROM #DETAIL</value>
+    <comment>Take DocEntry</comment>
+  </data>
+  <data name="DFI_INV_DETAIL_HEADER" xml:space="preserve">
+    <value>--DFI_INV_DETAIL_HEADER
+DECLARE @Entry INT = {0}
+IF OBJECT_ID('TEMPDB..#HEADER') IS NOT NULL BEGIN DROP TABLE #HEADER END
+
+CREATE TABLE #HEADER (
+	HeaderTag NCHAR(3)
+	, VendorCode NCHAR(5)
+	, StoreCode NCHAR(6)
+	, DSPNumber NCHAR(10)
+	, PONumber NCHAR(10)
+	, PODate NCHAR(8)			--yyyyMMdd
+	, DeliveryDate NCHAR(8)		--yyyyMMdd
+	, InvoiceNumber NCHAR(15)
+	, InvoiceDate NCHAR(8)		--yyyyMMdd
+	, GSTValue NCHAR(13)			--2decimal places - Max of 999999.99 - Include decimal point. - Prefix with 2 spaces								--Right Allign
+	, InvoiceValue NCHAR(13)		--Up to 2 decimal places - Max of 99999999.9900 Only 2 decimal places followed by 20s - Including decimal point.	--Right Allign
+)
+
+
+INSERT INTO #HEADER
+SELECT	'HDR'								HeaderTag
+	, T0.U_TWM_XVEND						VendorCode
+	, LEFT(ISNULL(SUBSTRING(U_TWM_ADDID,CHARINDEX('-',U_TWM_ADDID) + 1,5),''),5)		StoreCode			
+	, ''									DSPNumber
+	, LEFT(ISNULL(T3.NumAtCard,''),10)		PONumber
+	, ISNULL(CONVERT(NVARCHAR(8),ISNULL(T3.U_TWM_PODTE,(SELECT MAX(S0.DocDate) FROM ORDR S0 JOIN INV1 S1 ON S0.ObjType = S1.BaseType AND S0.DocEntry = S1.BaseEntry WHERE S1.DocEntry = T3.DocEntry)),112),'')	PODate
+	, CONVERT(NVARCHAR(8), ISNULL(T3.U_DELDATE, DATEADD(D,1,T3.DocDate)), 112)					DeliveryDate	--Need to reconfirm with unza what is the delivery date
+	, LEFT(T3.DocNum,15)																		InvoiceNumber
+	, CONVERT(NVARCHAR(8), T3.DocDate, 112)														DeliveryDate
+	, RIGHT('             ' + CONVERT(NVARCHAR(13),CONVERT(NUMERIC(9,2),ROUND(T3.VatSum,2))),13)						GSTValue
+	, RIGHT('             ' + CONVERT(NVARCHAR(13),CONVERT(NUMERIC(13,4),ROUND(T3.DocTotal - T3.VatSum,4))),13)					InvoiceValue
+	
+FROM [@TWM_OB2BS] T0 JOIN OADM T1 ON T0.Code = 'DFI'
+	JOIN OINV T3 ON T3.DocEntry = @Entry
+	JOIN CRD1 T4 ON T3.CardCode = T4.CardCode and T3.ShipToCode = T4.Address AND T4.AdresType = 'S'
+
+SELECT 	'''' + HeaderTag + '''' HeaderTag
+	, '''' +  VendorCode + '''' VendorCode
+	, '''' +  StoreCode + '''' StoreCode
+	, '''' +  DSPNumber + '''' DSPNumber
+	, '''' +  PONumber + '''' PONumber
+	, '''' +  PODate + '''' PODate
+	, '''' +  DeliveryDate + '''' DeliveryDate
+	, '''' +  InvoiceNumber + '''' InvoiceNumber
+	, '''' +  InvoiceDate + '''' InvoiceDate
+	, '''' +  GSTValue + '''' GSTValue
+	, '''' +  InvoiceValue + '''' InvoiceValue
+FROM #HEADER</value>
+    <comment>Take DocEntry</comment>
+  </data>
+  <data name="DFI_INV_SUMMARY" xml:space="preserve">
+    <value>--DFI_INV_SUMMARY
+DECLARE @Entry int = {0}
+
+IF OBJECT_ID('TEMPDB..#SUMMARY') IS NOT NULL BEGIN DROP TABLE #SUMMARY END
+
+CREATE TABLE #SUMMARY (
+	VendorCode CHAR(5)
+	, TransactionDate CHAR(8)
+	, InvoiceCount CHAR(5)
+	, TotalLines CHAR(8)
+	, TotalValue CHAR(15)
+	, FullCompanyName CHAR(40)
+	, VendorAddress1 CHAR(35)
+	, VendorAddress2 CHAR(35)
+	, VendorAddress3 CHAR(35)
+	, VendorAddress4 CHAR(35)
+	, Country CHAR(9)
+	, PostalCode CHAR(10)
+	, CompanyReg CHAR(30)
+	, GSTReg CHAR(15)
+	, InvoiceType CHAR(15)
+	, BuyerCode CHAR(5)
+)
+
+INSERT INTO #SUMMARY 
+SELECT T0.U_TWM_XVEND
+	, CONVERT(NVARCHAR(8), GETDATE(), 112)
+	, RIGHT('     ' + CONVERT(NVARCHAR(5),1),5)
+	, RIGHT('        ' + CONVERT(NVARCHAR(8),COUNT('A') + 1),8)
+	, RIGHT('               ' + CONVERT(NVARCHAR(15),CONVERT(NUMERIC(19,4),ROUND(T3.DocTotal,2))),15)
+	, LEFT(ISNULL(T1.CompnyName,''),40)
+	, LEFT(ISNULL(REPLACE(REPLACE(T1.CompnyAddr, CHAR(13),''), CHAR(10),''),''),35)
+	, SUBSTRING(ISNULL(REPLACE(REPLACE(T1.CompnyAddr, CHAR(13),''), CHAR(10),''),''),36,35)
+	, SUBSTRING(ISNULL(REPLACE(REPLACE(T1.CompnyAddr, CHAR(13),''), CHAR(10),''),''),71,35)
+	, SUBSTRING(ISNULL(REPLACE(REPLACE(T1.CompnyAddr, CHAR(13),''), CHAR(10),''),''),106,35)
+	, ISNULL(LEFT(T1.Country,9),'')
+	, (SELECT TOP 1 LEFT(ISNULL(ZipCode,''),10) FROM ADM1)
+	, LEFT(ISNULL(T1.TaxIdNum,''),30)
+	, LEFT(ISNULL(T1.TaxIdNum2,''),15)
+	, 'Tax Invoice'
+	, LEFT(ISNULL(T3.U_TWM_DFIBC,''),5)
+FROM [@TWM_OB2BS] T0 JOIN OADM T1 ON T0.Code = 'DFI'
+	JOIN OINV T3 ON T3.DocEntry = @Entry
+	JOIN INV1 T4 ON T3.DocEntry=  T4.DocEntry
+GROUP BY T0.U_TWM_XVEND, T1.CompnyName, T1.CompnyAddr, T1.Country, T1.TaxIdNum, T1.TaxIdNum2, ISNULL(T3.U_TWM_DFIBC,''), T3.DocTotal, T3.VatSum
+
+
+
+SELECT 	'''' + VendorCode + '''' VendorCode
+	, '''' +  TransactionDate + '''' TransactionDate
+	, '''' +  InvoiceCount + '''' InvoiceCount
+	, '''' +  TotalLines + '''' TotalLines
+	, '''' +  TotalValue + '''' TotalValue
+	, '''' +  FullCompanyName + '''' FullCompanyName
+	, '''' +  VendorAddress1 + '''' VendorAddress1
+	, '''' +  VendorAddress2 + '''' VendorAddress2
+	, '''' +  VendorAddress3 + '''' VendorAddress3
+	, '''' +  VendorAddress4 + '''' VendorAddress4
+	, '''' +  Country + '''' Country
+	, '''' +  PostalCode + '''' PostalCode
+	, '''' +  CompanyReg  + '''' CompanyReg
+	, '''' +  GSTReg + '''' GSTReg
+	, '''' +  InvoiceType + '''' InvoiceType
+	, '''' +  BuyerCode + '''' BuyerCode
+FROM #SUMMARY</value>
+    <comment>Takes DocEntry as Input</comment>
+  </data>
+  <data name="GET_DFI_INV_RECORDS" xml:space="preserve">
+    <value>SELECT CONVERT(INT,ROW_NUMBER() OVER (ORDER BY T0.DocEntry)) ID, 'Y' Slct, 'DFI_INV' [TYPE], T0.ObjType [OBTP], T0.DocEntry [DCEN], T0.DocNum [DCNM], T0.NumAtCard [POREF]
+	, T0.DocTotal [DCTTL]
+	, CONVERT(INT,NULL) B2BL, CONVERT(NVARCHAR(254),'') FLNM, CONVERT(NVARCHAR(254),'') RMRK
+FROM OINV T0 WITH(NOLOCK) JOIN INV1 T1 WITH(NOLOCK) ON T0.DocEntry = T1.DocEntry
+	LEFT JOIN (SELECT C1.U_TWM_ENTR, C1.U_TWM_LNUM FROM [@TWM_OB2BL] C0 WITH(NOLOCK) JOIN [@TWM_B2BL1] C1 WITH(NOLOCK) ON C0.DocEntry = C1.DocEntry WHERE C0.Canceled = 'N' AND C0.U_TWM_B2BC = 'DFI_INV' GROUP BY C1.U_TWM_ENTR, C1.U_TWM_LNUM) T2 ON T1.DocEntry = T2.U_TWM_ENTR AND T1.LineNum = T2.U_TWM_LNUM
+WHERE T0.CANCELED ='N' 
+	AND T0.CardCode = (SELECT S0.U_TWM_CARDC FROM [@TWM_OB2BS] S0 WITH(NOLOCK) WHERE (S0.Code ='DFI') AND S0.Canceled = 'N')
+	AND T0.U_TWM_B2BRC = 'Y'
+	AND T2.U_TWM_ENTR IS NULL	--Not processed before
+	AND T0.DocTotal &lt;&gt; 0 
+	AND ISNULL(T0.U_TWM_DFIBC,'') &lt;&gt; ''
+GROUP BY T0.DocEntry, T0.ObjType, T0.DocNum, T0.NumAtCard, T0.DocTotal
+ORDER BY ID</value>
+  </data>
+  <data name="GET_NTUC_CH_INV_RECORDS" xml:space="preserve">
+    <value>SELECT CONVERT(INT,ROW_NUMBER() OVER (ORDER BY T0.DocEntry)) ID, 'Y' Slct, 'NTUC_CH_INV' [TYPE], T0.ObjType [OBTP], T0.DocEntry [DCEN], T0.DocNum [DCNM], T0.NumAtCard [POREF]
+	, T0.DocTotal [DCTTL]
+	, CONVERT(INT,NULL) B2BL, CONVERT(NVARCHAR(254),'') FLNM, CONVERT(NVARCHAR(254),'') RMRK
+FROM OINV T0 WITH(NOLOCK) JOIN INV1 T1 WITH(NOLOCK) ON T0.DocEntry = T1.DocEntry
+	LEFT JOIN (SELECT C1.U_TWM_ENTR, C1.U_TWM_LNUM FROM [@TWM_OB2BL] C0  WITH(NOLOCK) JOIN [@TWM_B2BL1] C1  WITH(NOLOCK) ON C0.DocEntry = C1.DocEntry WHERE C0.Canceled = 'N' AND C0.U_TWM_B2BC = 'NTUC_CH_INV' GROUP BY C1.U_TWM_ENTR, C1.U_TWM_LNUM) T2 ON T1.DocEntry = T2.U_TWM_ENTR AND T1.LineNum = T2.U_TWM_LNUM
+WHERE T0.CANCELED ='N' 
+	AND T0.CardCode = (SELECT S0.U_TWM_CARDC FROM [@TWM_OB2BS] S0  WITH(NOLOCK) WHERE (S0.Code='NTUC_CH') AND S0.Canceled = 'N')
+	AND T0.U_TWM_B2BRC = 'Y'
+	AND T2.U_TWM_ENTR IS NULL	--Not processed before
+	AND T0.DocTotal &lt;&gt; 0 
+GROUP BY T0.DocEntry, T0.ObjType, T0.DocNum, T0.NumAtCard, T0.DocTotal
+ORDER BY ID</value>
+  </data>
+  <data name="GET_NTUC_INV_RECORDS" xml:space="preserve">
+    <value>SELECT CONVERT(INT,ROW_NUMBER() OVER (ORDER BY T0.DocEntry)) ID, 'Y' Slct, 'NTUC_INV' [TYPE], T0.ObjType [OBTP], T0.DocEntry [DCEN], T0.DocNum [DCNM], T0.NumAtCard [POREF]
+	, T0.DocTotal [DCTTL]
+	, CONVERT(INT,NULL) B2BL, CONVERT(NVARCHAR(254),'') FLNM, CONVERT(NVARCHAR(254),'') RMRK
+FROM OINV T0 WITH(NOLOCK) JOIN INV1 T1 WITH(NOLOCK) ON T0.DocEntry = T1.DocEntry
+	LEFT JOIN (SELECT C1.U_TWM_ENTR, C1.U_TWM_LNUM FROM [@TWM_OB2BL] C0 WITH(NOLOCK) JOIN [@TWM_B2BL1] C1 WITH(NOLOCK) ON C0.DocEntry = C1.DocEntry WHERE C0.Canceled = 'N' AND C0.U_TWM_B2BC = 'NTUC_INV' GROUP BY C1.U_TWM_ENTR, C1.U_TWM_LNUM) T2 ON T1.DocEntry = T2.U_TWM_ENTR AND T1.LineNum = T2.U_TWM_LNUM
+WHERE T0.CANCELED ='N' 
+	AND T0.CardCode = (SELECT S0.U_TWM_CARDC FROM [@TWM_OB2BS] S0 WITH(NOLOCK) WHERE (S0.Code ='NTUC_FP') AND S0.Canceled = 'N')
+	AND T0.U_TWM_B2BRC = 'Y'
+	AND T2.U_TWM_ENTR IS NULL	--Not processed before
+	AND T0.DocTotal &lt;&gt; 0 
+GROUP BY T0.DocEntry, T0.ObjType, T0.DocNum, T0.NumAtCard, T0.DocTotal
+ORDER BY ID</value>
+  </data>
+  <data name="NTUC_CH_INV_HEADER" xml:space="preserve">
+    <value>SELECT 'HDR' recordType
+	, T0.DocNum invNo
+	, CASE T0.CANCELED WHEN 'Y' THEN 'D' ELSE 'A' END docAction
+	, GetDate() actionDate
+	, 'SOR' invType
+	, T0.DocDate invDate
+	, T0.NumAtCard poNo
+	, (SELECT TOP 1 C0.DocDate FROM ORDR C0 WHERE C0.NumAtCard = T0.NumAtCard) poDate
+	, '' deliveryNo
+	, ISNULL(T0.U_DELDATE,DATEADD(d,1,T0.DocDate)) deliveryDate
+	, (SELECT TOP 1 C1.U_TWM_XCUST FROM [@TWM_OB2BS] C1 WHERE C1.Code = 'NTUC_CH') buyerCode
+	, T0.CardName buyerName
+	, '' buyerAddr1
+	, '' buyerAddr2
+	, '' buyerAddr3
+	, '' buyerAddr4
+	, '' buyerCity
+	, '' buyerState
+	, '' buyerCountryCode
+	, '' buyerPostalCode
+	, (SELECT TOP 1 C3.U_TWM_XVEND FROM [@TWM_OB2BS] C3 WHERE C3.Code = 'NTUC_CH') supplierCode
+	, (SELECT TOP 1 C6.CompnyName FROM [OADM] C6 ) supplierName
+	, '' supplierAddr1
+	, '' supplierAddr2
+	, '' supplierAddr3
+	, '' supplierAddr4
+	, '' supplierCity
+	, '' supplierState
+	, '' supplierCountryCode
+	, '' supplierPostalCode
+	, (SELECT TOP 1 C4.TaxIdNum FROM [OADM] C4 ) supplierBizRegNo
+	, '' supplierVatRegNo
+	, (SELECT TOP 1 C6.U_TWM_ADDID FROM CRD1 C6 WHERE C6.[Address] = T0.ShipToCode AND C6.CardCode = T0.CardCode)  storeCode
+	, '' storeName
+	, '' storeAddr1
+	, '' storeAddr2
+	, '' storeAddr3
+	, '' storeAddr4
+	, '' storeCity
+	, '' storeState
+	, '' storeCountryCode
+	, '' storePostalCode
+	, '' payTermCode
+	, '' payTermDesc
+	, '' payInstruct
+	, T0.DiscSum additionalDiscountAmount
+	, T0.DiscPrcnt additionalDiscountPercent
+	, (T0.DocTotal- T0.VatSum) invAmountNoVat
+	, T0.VatSum vatAmount
+	, T0.DocTotal invAmountWithVat
+	, (SELECT MAX(C5.VatPrcnt) FROM INV1 C5 WHERE C5.DocEntry = T0.DocEntry) vatRate
+	, '' invRemarks
+	, CONVERT(NUMERIC(19,6),0) cashDiscountAmount
+	, '' cashDiscountPercent
+FROM OINV T0
+WHERE T0.DocEntry  = {0}</value>
+  </data>
+  <data name="NTUC_INV_DETAIL" xml:space="preserve">
+    <value>SELECT 'DET' recordType
+	, T0.DocNum invNo
+	, T1.LineNum
+	, T1.VisOrder + 1 seqNo
+	, (SELECT C0.Substitute FROM OSCN C0 WHERE C0.CardCode = T0.CardCode AND C0.ItemCode = T2.ItemCode) buyerItemCode
+	, T1.ItemCode supplierItemCode
+	, T1.CodeBars barCode
+	, T1.Dscription itemDesc
+	, '' brand
+	, '' colourCode
+	, '' colourDesc
+	, '' sizeCode
+	, '' sizeDesc
+	, T1.NumPerMsr packingFactor
+	, CASE T1.NumPerMsr WHEN '1' THEN 'U' ELSE 'P' END invBaseUnit
+	, T1.UnitMsr invUom
+	, T1.Quantity invQty
+	, '' focBaseUnit
+	, '' focUom
+	, '' focQty
+	, T1.PriceBefDi unitPrice
+	, T1.PriceBefDi - T1.Price discountAmount
+	, T1.DiscPrcnt discountPercent
+	, T1.Price  netPrice
+	, ROUND(T1.Quantity* T1.PriceBefDi, T3.SumDec)  itemAmount
+	, T1.LineTotal netAmount
+	, '' itemBuyerSharedCost
+	, '' itemGrossAmount
+	, '' itemRemarks
+FROM OINV T0 WITH(NOLOCK) JOIN INV1 T1 WITH(NOLOCK) ON T0.DocEntry = T1.DocEntry
+	JOIN OITM T2 WITH(NOLOCK) ON T1.ItemCode = T2.ItemCode
+	,(SELECT TOP 1 * FROM OADM) T3
+WHERE T0.DocEntry  =  {0}</value>
+  </data>
+  <data name="NTUC_INV_HEADER" xml:space="preserve">
+    <value>SELECT 'HDR' recordType
+	, T0.DocNum invNo
+	, CASE T0.CANCELED WHEN 'Y' THEN 'D' ELSE 'A' END docAction
+	, GetDate() actionDate
+	, 'SOR' invType
+	, T0.DocDate invDate
+	, T0.NumAtCard poNo
+	, (SELECT TOP 1 C0.DocDate FROM ORDR C0 WHERE C0.NumAtCard = T0.NumAtCard) poDate
+	, '' deliveryNo
+	, ISNULL(T0.U_DELDATE, DATEADD(d,1,T0.DocDate)) deliveryDate
+	, (SELECT TOP 1 C1.U_TWM_XCUST FROM [@TWM_OB2BS] C1 WHERE C1.Code = 'NTUC_FP') buyerCode
+	, T0.CardName buyerName
+	, '' buyerAddr1
+	, '' buyerAddr2
+	, '' buyerAddr3
+	, '' buyerAddr4
+	, '' buyerCity
+	, '' buyerState
+	, '' buyerCountryCode
+	, '' buyerPostalCode
+	, (SELECT TOP 1 C3.U_TWM_XVEND FROM [@TWM_OB2BS] C3 WHERE C3.Code = 'NTUC_FP') supplierCode
+	, (SELECT TOP 1 C6.CompnyName FROM [OADM] C6 ) supplierName
+	, '' supplierAddr1
+	, '' supplierAddr2
+	, '' supplierAddr3
+	, '' supplierAddr4
+	, '' supplierCity
+	, '' supplierState
+	, '' supplierCountryCode
+	, '' supplierPostalCode
+	, (SELECT TOP 1 C4.TaxIdNum FROM [OADM] C4 ) supplierBizRegNo
+	, '' supplierVatRegNo
+	, (SELECT TOP 1 C6.U_TWM_ADDID FROM CRD1 C6 WHERE C6.[Address] = T0.ShipToCode AND C6.CardCode = T0.CardCode)  storeCode
+	, '' storeName
+	, '' storeAddr1
+	, '' storeAddr2
+	, '' storeAddr3
+	, '' storeAddr4
+	, '' storeCity
+	, '' storeState
+	, '' storeCountryCode
+	, '' storePostalCode
+	, '' payTermCode
+	, '' payTermDesc
+	, '' payInstruct
+	, T0.DiscSum additionalDiscountAmount
+	, T0.DiscPrcnt additionalDiscountPercent
+	, (T0.DocTotal- T0.VatSum) invAmountNoVat
+	, T0.VatSum vatAmount
+	, T0.DocTotal invAmountWithVat
+	, (SELECT MAX(C5.VatPrcnt) FROM INV1 C5 WHERE C5.DocEntry = T0.DocEntry) vatRate
+	, '' invRemarks
+	, CONVERT(NUMERIC(19,6),0) cashDiscountAmount
+	, '' cashDiscountPercent
+FROM OINV T0
+WHERE T0.DocEntry  = {0}</value>
+  </data>
+</root>
